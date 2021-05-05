@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*
+   Word Search Layout Style Sheet
+   
+*/
+
+
+/* Basic styles to be used with all devices and under all conditions */
+
+article, aside, figure, header, section { 
+   display: block;
+}
+
+article, aside, body, div, figure,
+h1, header, html, li, p, section, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+ul, ol {
+   list-style: none;
+}
+
+/* HTML and Body Styles */
+
+html {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;   
+   max-width: 1200px;
+   margin: 0px auto;
+   line-height: 1.2em;
+}
+
+body section#main {
+   -webkit-flex: 1 1 0px;
+   flex: 1 1 0px;
+   background-color: transparent;
+   height: 100%;
+   display: -webkit-flex;
+   display: flex;
+   webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+   
+p {
+   font-size: 1.2em;
+   line-height: 1.4em;
+   margin: 15px;
+}
+
+
+/* Header Styles */
+
+section#main > header {
+   width: 100%;
+}
+
+
+/* Article Styles */
+
+article {
+   -webkit-flex: 3 1 400px;
+   flex: 3 1 400px;
+   background-color: white;
+}
+
+   
+/* Aside  Styles */
+
+aside { 
+   -webkit-flex: 1 3 100px;
+   flex: 1 3 100px; 
+   padding: 0px 10px; 
+   background-color: white;
+}
+
+aside h1 {
+   font-weight: normal;
+   font-size: 1.8em;
+   margin: 0px 0px 20px 0px;
+   text-align: center;
+}
+table#wordSearchTable {
+   margin: 0px auto;
+}
+
+table#wordSearchTable caption {
+   font-size: 2.5em;
+   font-weight: bold;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   caption-side: top;
+   text-align: center;
+   margin: 0px 0px 20px;
+   color: rgb(101, 191, 101);
+}
+
+table#wordSearchTable td {
+   border: 1px solid rgb(101, 191, 101);
+   width: 18px;
+   height: 18px;
+   margin: 3px;
+   border-radius: 50%;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 0.8em;
+}
+
+input#showSolution {
+   width: 150px;
+   display: block;
+   margin: 30px auto;
+   background-color: white;
+   height: 70px;
+   font-size: 1.4em;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   border-radius: 50%;
+   border: 8px double rgb(255, 200, 158); 
+   cursor: pointer;   
+}
+
+input#showSolution:hover {
+   color: white;
+   background-color: rgb(101, 191, 101); 
+}
+
+input#pickedLetters {
+   width: 90%;
+   display: block;
+   margin: 10px auto;
+   text-align: center;
+}
+   
+ul#wordSearchList {
+   font-size: 1.3em;
+   column-width: 100px;
+}
+
+ul#wordSearchList {
+   line-height: 1.4em;
+}
